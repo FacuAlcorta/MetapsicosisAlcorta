@@ -5,6 +5,9 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+        .derechos{
+            color: white;
+        }
         .footer__social{
             display: flex;
             justify-content: center;
@@ -17,11 +20,5 @@ footer{
                 background-color: rgb(255, 255, 255);
             }
         }
-    }
-}
-
-footer{
-    .derechos{
-        color: white;
     }
 }

@@ -55,6 +55,8 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   text-align: center; }
+  footer .derechos {
+    color: white; }
   footer .footer__social {
     display: flex;
     justify-content: center; }
@@ -65,9 +67,6 @@ footer {
       footer .footer__social a:hover {
         border-radius: 200%;
         background-color: white; }
-
-footer .derechos {
-  color: white; }
 
 header .pMeta, header .pMael {
   display: flex;
