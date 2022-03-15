@@ -48,6 +48,17 @@ body {
     top: 1px;
     z-index: 1; } }
 
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: rgba(29, 28, 28, 0.5);
+    height: auto;
+    border: 1px solid white;
+    margin: 10px; }
+  .nav__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
 footer {
   border: 3px solid black;
   background-color: #535353;
@@ -64,18 +75,21 @@ footer {
       width: 50px;
       display: block;
       margin-top: 10px; }
-      footer .footer__social a:hover {
-        border-radius: 200%;
-        background-color: white; }
 
-header .pMeta, header .pMael {
+@media only screen and (min-width: 991px) {
+  footer .footer__social a:hover {
+    border-radius: 200%;
+    background-color: white;
+    transition: all 500ms ease; } }
+
+.headerIndex .pMeta, .headerIndex .pMael {
   display: flex;
   align-items: center;
   justify-content: center; }
 
-header div a .portadaShadow {
+.headerIndex div a .portadaShadow {
   box-shadow: 0 0 50px 0 #050505; }
-  header div a .portadaShadow:hover {
+  .headerIndex div a .portadaShadow:hover {
     box-shadow: 0 0 50px 0 white; }
 
 .cuerpoContenido {
@@ -89,3 +103,100 @@ header div a .portadaShadow {
     font-weight: 800;
     font-style: italic;
     text-decoration: underline; }
+
+.principal .section {
+  background-color: rgba(228, 228, 228, 0.5);
+  border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center; }
+  .principal .section div {
+    padding: 10px; }
+  .principal .section .principal__titulo, .principal .section .autobio__titulo, .principal .section .autores, .principal .section .editorial {
+    background-color: rgba(48, 48, 48, 0.5);
+    color: white;
+    text-align: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 1em; }
+  .principal .section .libros__img img, .principal .section .libros__texto, .principal .section .autobio__img, .principal .section .autobio__texto, .principal .section .principal__titulo, .principal .section .autobio__titulo, .principal .section .autores, .principal .section .editorial {
+    border: 1px solid black;
+    align-self: center; }
+  .principal .section .autobio__texto, .principal .section .libros__texto {
+    background-color: rgba(252, 239, 239, 0.5);
+    font-size: 2.5em;
+    padding: 10px; }
+  .principal .section .autobio__texto {
+    font-size: 3em; }
+  .principal .section .carritocompras {
+    cursor: pointer; }
+    .principal .section .carritocompras .shopp:hover {
+      border-radius: 0 50% 0 50%;
+      background-color: rgba(228, 44, 44, 0.3); }
+  .principal .section .titulos {
+    text-decoration: underline; }
+  .principal .section .lista, .principal .section .author {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 1.5em; }
+
+.cuerpo__presentaciones section div {
+  text-align: center; }
+  .cuerpo__presentaciones section div h2, .cuerpo__presentaciones section div h3 {
+    font-size: 3em;
+    color: white;
+    margin: 10px; }
+  .cuerpo__presentaciones section div .pres__titulo {
+    background-color: rgba(48, 48, 48, 0.5);
+    border: 1px solid black; }
+  .cuerpo__presentaciones section div .pres__subtitulo {
+    text-decoration: underline;
+    text-decoration-style: double; }
+  .cuerpo__presentaciones section div iframe {
+    box-shadow: 0 0 50px 0 #050505; }
+
+main .cuerpo__contacto {
+  justify-content: space-evenly; }
+  main .cuerpo__contacto .cuerpo__titulo {
+    background-color: rgba(48, 48, 48, 0.5);
+    font-size: 3em;
+    color: white;
+    text-align: center; }
+  main .cuerpo__contacto .formulario .nombre, main .cuerpo__contacto .formulario .apellido, main .cuerpo__contacto .formulario .email, main .cuerpo__contacto .formulario .msj {
+    color: white;
+    background-color: rgba(48, 48, 48, 0.5);
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%; }
+  main .cuerpo__contacto .formulario .nombre__area, main .cuerpo__contacto .formulario .apellido__area, main .cuerpo__contacto .formulario .email__area, main .cuerpo__contacto .formulario .msj__area, main .cuerpo__contacto .formulario .btnenviar, main .cuerpo__contacto .formulario .btnreset {
+    font-size: 1.5em; }
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .portadaShadow .section .marcos__foto,
+  .elmain .section .marcos__foto {
+    width: fit-content;
+    max-width: 100%;
+    box-shadow: 0 0 50px 0 #050505; }
+  .portadaShadow {
+    padding: 1em;
+    width: fit-content;
+    max-width: 100%;
+    box-shadow: 0 0 50px 0 #050505; } }
+
+@media only screen and (max-width: 768px) {
+  div header div .portadaShadow {
+    padding: 1em;
+    width: fit-content;
+    max-width: 100%;
+    box-shadow: 0 0 50px 0 #050505; }
+  div .principal .section .libros__img img {
+    width: 350px;
+    max-width: 100%; }
+  div .principal .section .marcos__foto .autobio__img {
+    padding: 1em;
+    width: fit-content;
+    max-width: 75%;
+    box-shadow: 0 0 50px 0 #050505; }
+  .cuerpo__presentaciones section div iframe {
+    max-width: 100%; } }

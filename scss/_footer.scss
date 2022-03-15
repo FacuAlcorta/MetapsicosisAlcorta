@@ -15,9 +15,19 @@ footer{
             width: 50px;
             display: block;
             margin-top: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 991px){
+    footer{
+        .footer__social{
+            a{
             &:hover{
                 border-radius: 200%;
                 background-color: rgb(255, 255, 255);
+                transition: all 500ms ease;
+                }
             }
         }
     }
