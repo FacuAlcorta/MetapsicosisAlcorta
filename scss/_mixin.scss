@@ -1,0 +1,11 @@
+@mixin flexrowCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerIndex{ 
+    .pMeta, .pMael{
+        @include flexrowCenter;
+    }
+}

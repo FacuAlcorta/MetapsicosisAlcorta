@@ -3,13 +3,16 @@
 @import "bodybg";
 @import "navbar";
 @import "footer";
+@import "map";
+@import "extend";
+@import "mixin";
 
 .headerIndex{ 
-    .pMeta, .pMael{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
+    // .pMeta, .pMael{
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     }
     div{
         a{
             .portadaShadow{
@@ -130,7 +133,7 @@ main{
     .cuerpo__contacto{
         justify-content: space-evenly;
         .cuerpo__titulo{
-            background-color: rgba(48, 48, 48, 0.5);
+            background-color: $titleColor;
             font-size: 3em;
             color: white;
             text-align: center;
@@ -138,7 +141,7 @@ main{
         .formulario{
             .nombre, .apellido, .email, .msj{
                 color: white;
-                background-color: rgba(48, 48, 48, 0.5);
+                background-color: $titleColor;
                 text-align: center;
                 font-size: 2.5em;
                 width: 100%;
@@ -152,78 +155,18 @@ main{
 
 
 //    ----------   MEDIAS QUERIES   ----------
+@media only screen and (max-width: 768px){
 
+//   -----------   PRESENCTACIONES   -----------
 
-@media only screen and (min-width: 769px) and (max-width: 991px){
-
-    .portadaShadow,
-    .elmain{
-        .section{
-            .marcos__foto{
-            width: fit-content;
-            max-width: 100%;
-            box-shadow: 0 0 50px 0 rgba(5, 5, 5, 1)
-            }
-        }    
-    }    
-    
-    .portadaShadow{
-        padding: 1em;
-        width: fit-content;
-        max-width: 100%;
-        box-shadow: 0 0 50px 0 rgba(5, 5, 5, 1)
-    }
-    
-    
-    }
-
-    @media only screen and (max-width: 768px){
-
-    div{
-        header{ 
-            div{   
-                .portadaShadow{
-                    padding: 1em;
-                    width: fit-content;
-                    max-width: 100%;
-                    box-shadow: 0 0 50px 0 rgba(5, 5, 5, 1);
-                }
+.cuerpo__presentaciones{
+    section{
+        div{
+            iframe{
+                   max-width: 100%;
             }
         }
     }
-
-    //   ----------   SOBRE MI y PUBLICACIONES   ----------
-    div{
-        .principal{
-            .section{
-                .libros__img{
-                    img{
-                        width: 350px;
-                        max-width: 100%;
-                    }
-                }
-                .marcos__foto{
-                    .autobio__img{
-                        padding: 1em;
-                        width: fit-content;
-                        max-width: 75%;
-                        box-shadow: $boxSombra;
-                    }
-                }
-            }
-        }
-    }
-    
-    //   -----------   PRESENCTACIONES   -----------
-
-    .cuerpo__presentaciones{
-        section{
-            div{
-                iframe{
-                    max-width: 100%;
-                }
-            }
-        }
-    }
+}
         
-    }
+}

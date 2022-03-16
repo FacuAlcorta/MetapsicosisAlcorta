@@ -1,0 +1,28 @@
+$decoImg:(
+    gPadding: 1em,
+    sombra: 0 0 50px 0 rgba(5, 5, 5, 1),
+    encaje: fit-content,
+    encajeTotal: 100%
+);
+
+@media only screen and (min-width: 769px) and (max-width: 991px){
+
+.imgMap{
+    padding: map-get($decoImg,gPadding);
+    box-shadow: map-get($decoImg,sombra);
+    width: map-get($decoImg,encaje);
+    max-width: map-get($decoImg,encajeTotal);
+} 
+
+}
+
+@media only screen and (max-width: 768px){
+    
+.imgMap{
+    padding: map-get($decoImg,gPadding);
+    box-shadow: map-get($decoImg,sombra);
+    width: map-get($decoImg,encaje);
+    max-width: map-get($decoImg,encajeTotal);
+    }
+
+}

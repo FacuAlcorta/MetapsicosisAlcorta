@@ -11,16 +11,8 @@
         flex-wrap: wrap;
         list-style: none;
         justify-content: space-evenly;
-                li{
-                background-color: $btncolor;
-                text-align: center;
-                cursor: pointer;
-                border-radius: 10px;
-                width: 250px;
-                height: 50px;
-                border: 5px solid $btnborder;
-                }
-        }
+        
+    }
 }
 
 .navbar{
