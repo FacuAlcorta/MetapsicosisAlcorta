@@ -5,6 +5,11 @@ $decoImg:(
     encajeTotal: 100%
 );
 
+.imgMap{
+    width: map-get($decoImg,encaje);
+    max-width: map-get($decoImg,encajeTotal);
+}
+
 @media only screen and (min-width: 769px) and (max-width: 991px){
 
 .imgMap{

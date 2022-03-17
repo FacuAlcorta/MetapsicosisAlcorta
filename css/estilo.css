@@ -74,6 +74,10 @@ footer {
     background-color: white;
     transition: all 500ms ease; } }
 
+.imgMap {
+  width: fit-content;
+  max-width: 100%; }
+
 @media only screen and (min-width: 769px) and (max-width: 991px) {
   .imgMap {
     padding: 1em;
@@ -109,14 +113,14 @@ footer {
   height: 50px;
   border: 5px solid rgba(100, 100, 100, 0.2); }
 
-.headerIndex .pMeta, .headerIndex .pMael {
+.portaIndex .pMeta, .portaIndex .pMael {
   display: flex;
   align-items: center;
   justify-content: center; }
 
-.headerIndex div a .portadaShadow {
+.portaIndex div a .portadaShadow {
   box-shadow: 0 0 50px 0 #050505; }
-  .headerIndex div a .portadaShadow:hover {
+  .portaIndex div a .portadaShadow:hover {
     box-shadow: 0 0 50px 0 white; }
 
 .cuerpoContenido {
