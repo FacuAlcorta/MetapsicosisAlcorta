@@ -153,6 +153,17 @@ main{
 //    ----------   MEDIAS QUERIES   ----------
 @media only screen and (max-width: 768px){
 
+//   ----------   PUBLICACIONES Y SOBRE MI ----------
+
+.principal{
+    .section{
+            .autobio__texto, .libros__texto{
+                font-size: 2em;
+            }
+    }
+
+}
+
 //   -----------   PRESENCTACIONES   -----------
 
 .cuerpo__presentaciones{
