@@ -1,11 +1,4 @@
-@import "fonts";
-@import "colors";
-@import "bodybg";
-@import "navbar";
-@import "footer";
-@import "map";
-@import "extend";
-@import "mixin";
+@import "todo";
 
 
 .portaIndex{ 
@@ -123,32 +116,58 @@
 }
 
 
-//    -----   CONTACTO   ----- 
+//    -----   CONTACTO CON CSS NATIVO  ----- 
 
-main{
-    .cuerpo__contacto{
-        justify-content: space-evenly;
-        .cuerpo__titulo{
-            background-color: $titleColor;
-            font-size: 3em;
-            color: white;
-            text-align: center;
-        }
-        .formulario{
-            .nombre, .apellido, .email, .msj{
-                color: white;
-                background-color: $titleColor;
-                text-align: center;
-                font-size: 2.5em;
-                width: 100%;
-            }
-        .nombre__area, .apellido__area, .email__area, .msj__area, .btnenviar, .btnreset{
-            font-size: 1.5em;
-        }
-        }
-    }
+.grid .navbar,
+.grid .navbar div ul{
+    width: -moz-available;
 }
 
+.main{
+    justify-content: space-evenly;
+    margin: 2.5em;
+}
+
+.main .cuerpo__titulo{
+    background-color: rgba(48, 48, 48, 0.5);
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+main .formulario .nombre,
+main .formulario .apellido,
+main .formulario .email,
+main .formulario .msj{
+    color: white;
+    background-color: rgba(48, 48, 48, 0.5);
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%;
+}
+
+main .formulario .nombre__area,
+main .formulario .apellido__area,
+main .formulario .email__area,
+main .formulario .msj__area,
+main .formulario .btnenviar,
+main .formulario .btnreset{
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.footer .derechos{
+    color: white;
+    display: grid;
+    grid-column: span 3;
+    padding-top: 20px;
+}
 
 //    ----------   MEDIAS QUERIES   ----------
 @media only screen and (max-width: 768px){

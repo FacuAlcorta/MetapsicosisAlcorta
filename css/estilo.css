@@ -51,6 +51,24 @@ body {
     flex-direction: column;
     align-items: center; } }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer"; }
+
+.header {
+  grid-area: header; }
+
+.nav {
+  grid-area: nav; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
+
 footer {
   border: 3px solid black;
   background-color: #535353;
@@ -188,21 +206,49 @@ footer {
   .cuerpo__presentaciones section div iframe {
     box-shadow: 0 0 50px 0 #050505; }
 
-main .cuerpo__contacto {
-  justify-content: space-evenly; }
-  main .cuerpo__contacto .cuerpo__titulo {
-    background-color: rgba(48, 48, 48, 0.5);
-    font-size: 3em;
-    color: white;
-    text-align: center; }
-  main .cuerpo__contacto .formulario .nombre, main .cuerpo__contacto .formulario .apellido, main .cuerpo__contacto .formulario .email, main .cuerpo__contacto .formulario .msj {
-    color: white;
-    background-color: rgba(48, 48, 48, 0.5);
-    text-align: center;
-    font-size: 2.5em;
-    width: 100%; }
-  main .cuerpo__contacto .formulario .nombre__area, main .cuerpo__contacto .formulario .apellido__area, main .cuerpo__contacto .formulario .email__area, main .cuerpo__contacto .formulario .msj__area, main .cuerpo__contacto .formulario .btnenviar, main .cuerpo__contacto .formulario .btnreset {
-    font-size: 1.5em; }
+.grid .navbar,
+.grid .navbar div ul {
+  width: -moz-available; }
+
+.main {
+  justify-content: space-evenly;
+  margin: 2.5em; }
+
+.main .cuerpo__titulo {
+  background-color: rgba(48, 48, 48, 0.5);
+  font-size: 3em;
+  color: white;
+  text-align: center; }
+
+main .formulario .nombre,
+main .formulario .apellido,
+main .formulario .email,
+main .formulario .msj {
+  color: white;
+  background-color: rgba(48, 48, 48, 0.5);
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%; }
+
+main .formulario .nombre__area,
+main .formulario .apellido__area,
+main .formulario .email__area,
+main .formulario .msj__area,
+main .formulario .btnenviar,
+main .formulario .btnreset {
+  width: 100%;
+  font-size: 1.5em; }
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center; }
+
+.footer .derechos {
+  color: white;
+  display: grid;
+  grid-column: span 3;
+  padding-top: 20px; }
 
 @media only screen and (max-width: 768px) {
   .principal .section .autobio__texto, .principal .section .libros__texto {
