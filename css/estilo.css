@@ -19,11 +19,14 @@ body {
     flex-wrap: wrap;
     list-style: none;
     justify-content: space-evenly; }
+    .navbar ul li:hover {
+      background-color: white;
+      transition: all 500ms ease; }
 
 .navbar div div ul .actual {
   background-color: white;
   border-color: rgba(100, 100, 100, 0.2);
-  transform: translate(0px, -5px); }
+  transform: translate(0px, -7px); }
 
 .navbar div div ul .anchor {
   font-size: 31px;
@@ -210,6 +213,9 @@ footer {
 .grid .navbar div ul {
   width: -moz-available; }
 
+.header {
+  padding: 0px 10px 0px 10px; }
+
 .main {
   justify-content: space-evenly;
   margin: 2.5em; }
@@ -248,7 +254,7 @@ main .formulario .btnreset {
   color: white;
   display: grid;
   grid-column: span 3;
-  padding-top: 20px; }
+  padding: 10px 0px 10px 0px; }
 
 @media only screen and (max-width: 768px) {
   .principal .section .autobio__texto, .principal .section .libros__texto {

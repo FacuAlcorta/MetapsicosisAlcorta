@@ -123,6 +123,10 @@
     width: -moz-available;
 }
 
+.header{
+    padding: 0px 10px 0px 10px;
+}
+
 .main{
     justify-content: space-evenly;
     margin: 2.5em;
@@ -166,7 +170,7 @@ main .formulario .btnreset{
     color: white;
     display: grid;
     grid-column: span 3;
-    padding-top: 20px;
+    padding: 10px 0px 10px 0px;
 }
 
 //    ----------   MEDIAS QUERIES   ----------
